@@ -5,8 +5,8 @@ backend:
 locale: 'de'  # Setzt die Sprache auf Deutsch
 
 # This line should *not* be indented
-media_folder: "static/images/uploads" # Media files will be stored in the repo under images/uploadspublic_folder: "/assets/images/uploads"
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "/images" # Media files will be stored in the repo under images/uploadspublic_folder: "/assets/images/uploads"
+public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
 
  # Collection für die index.html-Seite hinzufügen
 collections:
