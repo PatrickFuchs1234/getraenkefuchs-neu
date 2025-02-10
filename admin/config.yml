@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: master  # Change this to your main branch
 
+logo_url: https://onememorypermile.com/images/logo-ompm.png
+
 locale: 'de'  # Setzt die Sprache auf Deutsch
 
 editor:
