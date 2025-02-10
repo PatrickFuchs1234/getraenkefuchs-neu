@@ -1,5 +1,136 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/* Override default gridlex padding */ 
+[class*=col] { padding: 0; }
+[class*=grid] { margin: 0; }
+
+/*  ----------- Utility Classes */
+
+.padded{    padding: 5%; }
+.padded10{    padding: 10%;}
+.padded1{    padding: 1rem; }
+.padded2{    padding: 2rem; }
+
+
+.vh-20  { min-height: 20vh; }
+.vh-50  { min-height: 50vh; }
+.vh-60  { min-height: 60vh; }
+.vh-70  { min-height: 70vh; }
+.vh-80  { min-height: 80vh; }
+.vh-90  { min-height: 90vh; }
+
+.text-left     { text-align: left;}
+.text-center   { text-align: center;}
+.text-right    { text-align: right;}
+
+/* ------------ Typography */
+
+body{
+    font-family: 'Raleway', Sans-Serif;
+}
+
+h1, h2, h3, h4{
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+p, li{
+    margin-bottom: 0.5rem;
+}
+p:last-child{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(120, 120, 120);
+}
+
+.white-text{    color: white;   }
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+
+.fa-brands{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.copyright{
+    font-size: 0.8;
+    opacity: 0.8;
+    padding-bottom: 0.5rem;
+}
+
+/* ------------ Background Images, Background */
+
+.bg-image{
+    background-color: #24282B;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-image-roof      { background-image: url(/images/the-bunker-5.jpg);  }
+.bg-image-bed       { background-image: url(/images/the-bunker-1.jpg);  }
+.bg-image-hall      { background-image: url(/images/the-bunker-3.jpg);  }
+.bg-image-libary    { background-image: url(/images/the-bunker-4.jpg);  }
+.bg-image-chair     { background-image: url(/images/the-bunker-2.jpg);  }
+.bg-image-bedsheet  { background-image: url(/images/the-bunker-7.jpg);  }
+.bg-image-map       { background-image: url(/images/the-bunker-6.png);  }
+
+.bg-dark{
+    background-color: #24282B;
+    color: white;
+}
+
+.bg-padded {
+    padding-bottom: 30%;
+}
+
+.social-banner { background-position: 50% 17%;}
+
+.bg-overlay::after {
+    z-index: 1;
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.3);
+  } 
+  
+  .bg-overlay > * {
+    z-index: 2;
+    position: relative;
+  }
+
+@media (max-width: 48em) {
+
+.hide_sm{ display: none;}
+.flex-flip_sm{ flex-direction: column-reverse;}
+.sm-padded-lg {padding: 10%;}
+
+footer h4, footer a{
+    display: block;
+    text-align: left;
+}
+
+.social-banner {
+    background-image: none; 
+    background-color: #1C2A2C;
+}
 }
