@@ -17,10 +17,12 @@ public_folder: "/images" # The src attribute for uploaded media will begin with 
 collections:
   - name: "pages"
     label: "Seiten"
+
     files:
       - label: "Index-Seite"
         name: "index"
         file: "index.html"  # Pfad zu deiner Index-Datei
+        preview_path: index
         fields:
           - {label: "Intro Titel", name: "intro_title", widget: "string"}  # Titel
           - {label: "Intro Text", name: "intro_text", widget: "text"}  # Text
