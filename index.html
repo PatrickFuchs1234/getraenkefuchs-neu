@@ -1,12 +1,15 @@
 ---
 layout: default
 title: Homepage
-intro_title: Lux
-intro_text: We'll do this and that so you think its awsome!
-intro_subtext: Just everything amazing!
+intro_title: "Lux."
+intro_text: "Welcome to The Bunker, where sophistication meets comfort. Our meticulously designed spaces promise a blend of elegance and modernity. Discover a sanctuary where every detail is crafted to offer an exceptional stay."
+intro_subtext: "Immerse yourself in the serene atmosphere of our luxurious rooms, designed to provide ultimate relaxation and tranquility."
+bg-image-roof: "/images/the-bunker-5.jpg"
+bg-image-bed: "/images/the-bunker-1.jpg"
 ---
 
-<header class="bg-image bg-image-roof bg-overlay padded vh-70 grid-middle">
+
+<header class="bg-image bg-overlay padded vh-70 grid-middle" style="background-image: url('{{ page.bg-image-roof }}');">
     <div class="col-12 text-center">
         <h1 class="white-text"> The Bunker</h1>
     </div>
@@ -14,7 +17,7 @@ intro_subtext: Just everything amazing!
 
 <!-- Dark intro section -->
 <section class="bg-dark grid padded">
-        <div class="col-6_sm-12 bg-image bg-image-bed bg-padded vh-50"> </div>
+        <div class="col-6_sm-12 bg-image bg-padded vh-50" style="background-image: url('{{ page.bg-image-bed }}');"> </div>
         <div class="col-6_sm-12-middle padded2">
             <h2>{{ page.intro_title }}</h2> <!-- Dynamischer Titel -->
             <p>{{ page.intro_text }}</p> <!-- Dynamischer Text -->
