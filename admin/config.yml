@@ -18,3 +18,5 @@ collections:
           - {label: "Intro Titel", name: "intro_title", widget: "string"}  # Titel
           - {label: "Intro Text", name: "intro_text", widget: "text"}  # Text
           - {label: "Intro Untertext", name: "intro_subtext", widget: "text"}  # Untertext
+          - {label: "Hintergrundbild Kopffeld", name: "bg-image-roof", widget: "image"}  # Neues Bild-Upload-Feld
+          - {label: "Bild erste Section", name: "bg-image-bed", widget: "image"}  # Neues Bild-Upload-Feld
