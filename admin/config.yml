@@ -18,12 +18,14 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
  # Collection für die index.html-Seite hinzufügen
-  - name: "index"
-    label: "Startseite"
+ collections:
+  - name: "pages"
+    label: "Seiten"
     files:
       - label: "Index-Seite"
         name: "index"
-        file: "index.html"  # Pfad zu deiner Index-HTML-Datei
+        file: "index.html"  # Pfad zu deiner Index-Datei
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}  # Du kannst HTML als Text einfüg
+          - {label: "Intro Titel", name: "intro_title", widget: "string"}  # Titel
+          - {label: "Intro Text", name: "intro_text", widget: "text"}  # Text
+          - {label: "Intro Untertext", name: "intro_subtext", widget: "text"}  # Untertext
